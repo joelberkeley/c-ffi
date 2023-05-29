@@ -7,7 +7,7 @@ This library is intended to remove the need to build and package some more commo
 ### Install
 
 Install [pack](https://github.com/stefan-hoeck/idris2-pack), then run
-```
+```bash
 pack install c-ffi
 ```
 
