@@ -2,9 +2,16 @@
 
 Generic C FFI utilities for Idris.
 
-This library is intended to remove the need to build and package some more common C FFI utilities with Idris projects.
+This library is intended to remove the need to build and package some of the more common C FFI utilities with Idris projects.
 
-## Example
+### Install
+
+Install [pack](https://github.com/stefan-hoeck/idris2-pack), then run
+```bash
+pack install c-ffi
+```
+
+### Example
 
 We can create a C array `double*`
 <!-- idris
@@ -24,7 +31,7 @@ doubles = do
 
   pure xs
 ```
-We can then read and print this array
+and then read and print the array
 ```idris
 showDoubles : IO ()
 showDoubles = do
