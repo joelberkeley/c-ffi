@@ -1,4 +1,4 @@
-[custom.all.c]
+[custom.all.c-ffi]
 type = "local"
 path = ""
-ipkg = "c.ipkg"
+ipkg = "c-ffi.ipkg"

@@ -1,6 +1,6 @@
 package test
 
-depends = c, hedgehog
+depends = c-ffi, hedgehog
 
 sourcedir = "test"
 

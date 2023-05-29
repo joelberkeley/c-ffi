@@ -11,8 +11,8 @@ import Hedgehog
 import Prim.Array
 import Prim.SizeOf
 
-array : Property
-array = property $ do
+arrayInt32 : Property
+arrayInt32 = property $ do
   expected <- forAll (list (constant 1 5) (int32 constantBounded))
   let len = length expected
       idxs = [0..cast (pred len)]
@@ -26,8 +26,26 @@ array = property $ do
 
   unsafePerformIO actual === expected
 
+arrayString : Property
+arrayString = withTests 1 $ property $ do
+  let actual = do
+        xs <- malloc (3 * cast prim__sizeOfPtr)
+        let xs = prim__castPtr xs
+
+        primIO $ prim__setArrayString xs 0 "foo"
+        primIO $ prim__setArrayString xs 1 ""
+        primIO $ prim__setArrayString xs 2 "bar"
+
+        let actual = map (prim__getArrayString xs) [0, 1, 2]
+
+        free (prim__forgetPtr xs)
+        pure actual
+
+  unsafePerformIO actual === ["foo", "", "bar"]
+
 export
 group : Group
 group = MkGroup "Array" $ [
-    ("test array set and and get", array)
+      ("test array set and and get Int32", arrayInt32)
+    , ("test array set and and get String", arrayString)
   ]

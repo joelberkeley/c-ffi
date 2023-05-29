@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+int sizeof_ptr() { return sizeof(void*); }
+
 int sizeof_char() { return sizeof(char); }
 int sizeof_bool() { return sizeof(bool); }
 

@@ -9,6 +9,10 @@ export
 prim__getArrayChar : Ptr Char -> Bits64 -> Char
 
 export
+%foreign (lib "get_array_char_ptr")
+prim__getArrayString : Ptr String -> Bits64 -> String
+
+export
 %foreign (lib "get_array_bool")
 prim__getArrayBool : Ptr Bool -> Bits64 -> Bool
 
@@ -55,6 +59,10 @@ prim__getArrayDouble : Ptr Double -> Bits64 -> Double
 export
 %foreign (lib "set_array_char")
 prim__setArrayChar : Ptr Char -> Bits64 -> Char -> PrimIO ()
+
+export
+%foreign (lib "set_array_char_ptr")
+prim__setArrayString : Ptr String -> Bits64 -> String -> PrimIO ()
 
 export
 %foreign (lib "set_array_bool")

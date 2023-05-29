@@ -5,6 +5,10 @@ import System.FFI
 import Prim.Lib
 
 export
+%foreign (lib "sizeof_ptr")
+prim__sizeOfPtr : Bits64
+
+export
 %foreign (lib "sizeof_char")
 prim__sizeOfChar : Bits64
 
