@@ -5,11 +5,12 @@ Generic C FFI utilities for Idris. This library doesn't attempt to provide safet
 ## Example
 
 We can create an C array of `Int32`. Note we haven't freed it
-```idris
+<!-- idris
 import System.FFI
 import Prim.Array
 import Prim.SizeOf
-
+-->
+```idris
 integers : IO (Ptr Double)
 integers = do
   xs <- malloc (3 * cast prim__sizeOfDouble)

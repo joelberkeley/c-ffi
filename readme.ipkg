@@ -1,5 +1,5 @@
 package readme
 
-main = README
-
 depends = c-ffi
+
+main = README
