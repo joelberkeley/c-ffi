@@ -1,7 +1,5 @@
 package c-ffi
-version = 0.0.1
 
-opts = "--total"
 sourcedir = "src"
 modules =
     Prim.Array

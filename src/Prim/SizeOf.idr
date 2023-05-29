@@ -47,3 +47,7 @@ prim__sizeOfBits32 : Bits64
 export
 %foreign (lib "sizeof_uint64_t")
 prim__sizeOfBits64 : Bits64
+
+export
+%foreign (lib "sizeof_double")
+prim__sizeOfDouble : Bits64

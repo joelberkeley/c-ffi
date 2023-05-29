@@ -52,10 +52,6 @@ export
 %foreign (lib "get_array_double")
 prim__getArrayDouble : Ptr Double -> Bits64 -> Double
 
-
-
-
-
 export
 %foreign (lib "set_array_char")
 prim__setArrayChar : Ptr Char -> Bits64 -> Char -> PrimIO ()
