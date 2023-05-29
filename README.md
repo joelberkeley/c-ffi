@@ -6,7 +6,7 @@ This library is intended to remove the need to build and package some more commo
 
 ## Example
 
-We can create an C array of `Double`
+We can create a C array `double*`
 <!-- idris
 import System.FFI
 import Prim.Array
