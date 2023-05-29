@@ -2,7 +2,7 @@
 
 Generic C FFI utilities for Idris.
 
-This library is intended to remove the need to build and package some more common C FFI utilities with Idris projects.
+This library is intended to remove the need to build and package some of the more common C FFI utilities with Idris projects.
 
 ### Install
 
