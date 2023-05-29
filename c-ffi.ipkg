@@ -1,0 +1,13 @@
+package c-ffi
+
+sourcedir = "src"
+modules =
+    Prim.Array
+  , Prim.Lib
+  , Prim.SizeOf
+
+brief = "Generic C FFI utilities for Idris"
+readme = "README.md"
+license = "Apache License, Version 2.0"
+
+postbuild = "./postbuild.sh"

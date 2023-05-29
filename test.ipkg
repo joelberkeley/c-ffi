@@ -1,0 +1,12 @@
+package test
+
+depends = c-ffi, hedgehog
+
+sourcedir = "test"
+
+executable = test
+main = Main
+
+modules =
+    Prim.TestArray
+  , Main

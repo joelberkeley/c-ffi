@@ -1,0 +1,22 @@
+on:
+  pull_request:
+    branches: master
+
+env:
+  PACK_DIR: /root/.pack
+
+jobs:
+  test-unit:
+    runs-on: ubuntu-latest
+    container: ghcr.io/stefan-hoeck/idris2-pack
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run tests
+      run: pack --no-prompt run test.ipkg
+  readme:
+    runs-on: ubuntu-latest
+    container: ghcr.io/stefan-hoeck/idris2-pack
+    steps:
+    - uses: actions/checkout@v3
+    - name: Type-check README
+      run: pack --no-prompt typecheck readme.ipkg
