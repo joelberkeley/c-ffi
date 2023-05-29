@@ -32,4 +32,5 @@ showIntegers = do
 ```
 <!-- idris
 main : IO ()
+main = showIntegers
 -->
