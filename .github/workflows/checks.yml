@@ -18,4 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Type-check README
-      run: pack --no-prompt run readme.ipkg
+      run: pack --no-prompt typecheck readme.ipkg
