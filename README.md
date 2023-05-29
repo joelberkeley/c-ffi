@@ -31,7 +31,7 @@ doubles = do
 
   pure xs
 ```
-We can then read and print this array
+and then read and print the array
 ```idris
 showDoubles : IO ()
 showDoubles = do
