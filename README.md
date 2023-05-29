@@ -4,7 +4,7 @@ Generic C FFI utilities for Idris. This library doesn't attempt to provide safet
 
 ## Example
 
-We can create an C array of `Int32`. Note we haven't freed it
+We can create an C array of `Int32`
 <!-- idris
 import System.FFI
 import Prim.Array
