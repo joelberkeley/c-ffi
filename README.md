@@ -1,6 +1,8 @@
 # c-ffi
 
-Generic C FFI utilities for Idris. This library doesn't attempt to provide safety or niceties.
+Generic C FFI utilities for Idris.
+
+This library is intended to remove the need to build and package some more common C FFI utilities with Idris projects.
 
 ## Example
 
