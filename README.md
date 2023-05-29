@@ -13,8 +13,8 @@ import Prim.Array
 import Prim.SizeOf
 -->
 ```idris
-integers : IO (Ptr Double)
-integers = do
+doubles : IO (Ptr Double)
+doubles = do
   xs <- malloc (3 * cast prim__sizeOfDouble)
   let xs = prim__castPtr xs
 
@@ -26,14 +26,14 @@ integers = do
 ```
 We can then read and print this array
 ```idris
-showIntegers : IO ()
-showIntegers = do
-  ints <- integers
-  let ints' = map (prim__getArrayDouble ints) [0, 1, 2]
-  free (prim__forgetPtr ints)
-  printLn ints'
+showDoubles : IO ()
+showDoubles = do
+  ds <- doubles
+  let ds' = map (prim__getArrayDouble ds) [0, 1, 2]
+  free (prim__forgetPtr ds)
+  printLn ds'
 ```
 <!-- idris
 main : IO ()
-main = showIntegers
+main = showDoubles
 -->
