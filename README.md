@@ -11,7 +11,7 @@ Install [pack](https://github.com/stefan-hoeck/idris2-pack), then run
 pack install c-ffi
 ```
 
-## Example
+### Example
 
 We can create a C array `double*`
 <!-- idris
