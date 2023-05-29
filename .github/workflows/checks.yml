@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    branches: master
+
+jobs:
+  test-unit:
+    runs-on: ubuntu-latest
+    container: ghcr.io/stefan-hoeck/idris2-pack
+    steps:
+    - uses: actions/checkout@v3
+    - run: pack --no-prompt run test.ipkg
+      env:
+        PACK_DIR: /root/.pack
