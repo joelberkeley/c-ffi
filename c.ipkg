@@ -4,7 +4,9 @@ version = 0.0.1
 opts = "--total"
 sourcedir = "src"
 modules =
-    C.idr
+    Prim.Array
+  , Prim.Lib
+  , Prim.SizeOf
 
 brief = "Generic C FFI utilities for Idris"
 readme = "README.md"

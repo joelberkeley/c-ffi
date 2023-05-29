@@ -2,9 +2,7 @@ module Prim.Array
 
 import System.FFI
 
-public export
-lib : String -> String
-lib fname = "C:" ++ fname ++ ",libc_ffi"
+import Prim.Lib
 
 export
 %foreign (lib "get_array_char")

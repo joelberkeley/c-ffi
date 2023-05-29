@@ -1,6 +1,6 @@
 package test
 
-depends = c
+depends = c, hedgehog
 
 sourcedir = "test"
 
@@ -8,4 +8,5 @@ executable = test
 main = Main
 
 modules =
-    TestArray.idr
+    Prim.TestArray
+  , Main
