@@ -1,0 +1,13 @@
+package c
+version = 0.0.1
+
+opts = "--total"
+sourcedir = "src"
+modules =
+    C.idr
+
+brief = "Generic C FFI utilities for Idris"
+readme = "README.md"
+license = "Apache License, Version 2.0"
+
+postbuild = "./postbuild.sh"

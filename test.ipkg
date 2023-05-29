@@ -1,0 +1,11 @@
+package test
+
+depends = c
+
+sourcedir = "test"
+
+executable = test
+main = Main
+
+modules =
+    TestArray.idr
