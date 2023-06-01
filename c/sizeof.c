@@ -13,3 +13,4 @@ int sizeof_uint8_t() { return sizeof(uint8_t); }
 int sizeof_uint16_t() { return sizeof(uint16_t); }
 int sizeof_uint32_t() { return sizeof(uint32_t); }
 int sizeof_uint64_t() { return sizeof(uint64_t); }
+int sizeof_double() { return sizeof(double); }
